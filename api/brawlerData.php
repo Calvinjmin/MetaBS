@@ -1,6 +1,8 @@
 <?php
-include_once("creds.php");
+//include_once("creds.php");
 header('Content-Type: text/html; charset=UTF-8');
+$BRAWLERURL = "https://api.brawlstars.com/v1/brawlers";
+$TOKEN = getenv('TOKEN');
 $ch = curl_init($BRAWLERURL);
 
 $headr = array();
