@@ -10,22 +10,32 @@
                 Home
             </a>
 
+            <a class="navbar-item">
+                About
+            </a>
+
             <a href="/components/table/brawlerTable.php" class="navbar-item">
                 Brawlers
             </a>
         </div>
 
         <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    User
+                </a>
+
+                <div class="navbar-dropdown is-right">
+                    <a class="navbar-item">
+                        Log In
                     </a>
-                    <a class="button is-light">
-                        Log in
+                    <a class="navbar-item">
+                        Sign Up
+                    </a>
+                    <a class="navbar-item">
+                        Logout
                     </a>
                 </div>
             </div>
         </div>
-    </div>
 </nav>

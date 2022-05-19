@@ -1,7 +1,6 @@
 <?php
-header('Content-Type: text/html; charset=UTF-8');
-$BRAWLERURL = "https://api.brawlapi.com/v1/brawlers";
-$ch = curl_init($BRAWLERURL);
+$ICONURL = "https://api.brawlapi.com/v1/icons";
+$ch = curl_init($ICONURL);
 
 $headr = array();
 $headr[] = "Accept: application/json";
@@ -21,6 +20,7 @@ if (isset($data["reason"])) {
 }
 
 // JSON ARRAY
-// Endpoint Description: https://brawlapi.com/#/endpoints/brawlers
-$brawlers = $data["list"];
+// Icon Data for Players and Clubs 
+// https://brawlapi.com/#/endpoints/icons
+$iconData = $data
 ?>
