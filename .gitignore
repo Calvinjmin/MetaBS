@@ -3,6 +3,3 @@
 
 # Composer Depends
 /vendor/
-
-# Heroku Deployment Files
-Procfile
