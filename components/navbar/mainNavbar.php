@@ -10,11 +10,11 @@
                 Home
             </a>
 
-            <a class="navbar-item">
+            <a href="/pages/about.php" class="navbar-item">
                 About
             </a>
 
-            <a href="/components/table/brawlerTable.php" class="navbar-item">
+            <a href="/pages/brawlerInfo.php" class="navbar-item">
                 Brawlers
             </a>
         </div>
