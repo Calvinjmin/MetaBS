@@ -6,7 +6,10 @@ echo "<tr> <th>Name</th> <th colspan=\"2\">Gadget</th> <th colspan=\"2\">Star Po
 foreach( $brawlers as $bra ) {
     echo "<tr>";
     echo '<td>' . $bra["name"] . '</td>';
-    if ( count($bra["gadgets"]) < 2 ) {
+    if ( $bra["gadgets"] == NULL) {
+        echo '<td colspan="2"> N/A </td>';  
+    }
+    else if ( count($bra["gadgets"]) < 2 ) {
         echo '<td colspan="2">' . $bra["gadgets"][0]["name"] . '</td>';  
     }
     else {
@@ -14,7 +17,11 @@ foreach( $brawlers as $bra ) {
             echo '<td>' . $gad["name"] . '</td>';    
         }
     }
-    if ( count($bra["starPowers"]) < 2 ) {
+
+    if ( $bra["starPowers"] == NULL) {
+        echo '<td colspan="2"> N/A </td>';  
+    }
+    else if ( count($bra["starPowers"]) < 2 ) {
         echo '<td colspan="2">' . $bra["starPowers"][0]["name"] . '</td>';
     }
     else {
