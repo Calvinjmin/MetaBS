@@ -1,5 +1,12 @@
-body            
-{
-    margin:auto;
-    padding:10px;
+body {
+  margin: auto;
+  padding: 10px;
+}
+
+.bodyText {
+  position: relative;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }

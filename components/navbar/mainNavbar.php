@@ -4,7 +4,7 @@
         <img src="https://brawlstarsup.com/wp-content/uploads/2018/12/leon.png" width="59.18" height="50">
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-menu">
         <div class="navbar-start">
             <a href="/index.php" class="navbar-item">
                 Home
