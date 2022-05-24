@@ -11,7 +11,7 @@
 <?php
 // Creating the Brawler Table with Bulma CSS
 echo "<table class=\"table is-bordered is-striped is-narrow is-hoverable is-fullwidth\">";
-echo "<tr> <th>Name</th> <th colspan=\"2\">Gadget</th> <th colspan=\"2\">Star Power</th></tr>";
+echo "<tr> <th>Name</th> <th>Rarity</th> <th>Class</th></tr>";
 
 foreach ($brawlers as $bra) {
     echo "<tr>";
@@ -20,6 +20,9 @@ foreach ($brawlers as $bra) {
     echo '<td> <img src= "' . $bra["imageUrl"] . '" width=30 height=30  style="padding-right: 2px">
             <a onclick="indivBrawler(this)">' . $bra["name"] . '</a> </td>';
     
+    echo '<td>' . $bra["rarity"]["name"]. '</td>';
+    echo '<td>' . $bra["class"]["name"]. '</td>';
+    /*
     if ($bra["gadgets"] == NULL) {  // No available gadgets
         echo '<td colspan="2"> N/A </td>';
     } else if (count($bra["gadgets"]) < 2) {    // 1 Gadget
@@ -39,6 +42,7 @@ foreach ($brawlers as $bra) {
             echo '<td>' . $sp["name"] . '</td>';
         }
     }
+    */
     echo "</tr>";
 }
 echo "</table>";
