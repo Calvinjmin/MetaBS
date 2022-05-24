@@ -1,35 +1,36 @@
 <?php include_once("./api/events.php") ?>
 <div class="bodyMap">
-<p class="bodyText">
-    <?php 
-    echo 'Events on ' . date('l jS \of F Y'); 
-    echo '<br>';
-    ?>
-</p>
-    <div class="columns is-centered" style="padding-top: 1%; ">
-    <?php
-    for ($x = 0; $x < sizeof($activeEvents); $x += 2) {
-        $ae1 = $activeEvents[$x];
-        $ae2 = $activeEvents[$x + 1];
-
-        echo '<div class =column>';
-
-        echo $ae1["map"]["gameMode"]["name"];
-        echo '&nbsp;&nbsp;&nbsp;&nbsp';
-        echo $ae1["map"]["name"];
+    <div class="container content has-text-centered">
+    <p>
+        <?php
+        echo 'Events on ' . date('l jS \of F Y');
         echo '<br>';
-        echo '<img src=' . $ae1["map"]["imageUrl"] . ' width=172.5 height=262.5></img>';
-        echo '<br>';
+        ?>
+    </p>
+        <div class="columns is-centered" style="padding-top: 1%; ">
+            <?php
+            for ($x = 0; $x < sizeof($activeEvents); $x += 2) {
+                $ae1 = $activeEvents[$x];
+                $ae2 = $activeEvents[$x + 1];
 
-        echo $ae2["map"]["gameMode"]["name"];
-        echo '&nbsp;&nbsp;&nbsp;&nbsp';
-        echo $ae2["map"]["name"];
-        echo '<br>';
-        echo '<img src=' . $ae2["map"]["imageUrl"] . ' width=172.5 height=262.5></img>';
+                echo '<div class =column>';
 
-        echo "</div>";
-    }
-    ?>
+                echo $ae1["map"]["gameMode"]["name"];
+                echo '&nbsp;&nbsp;&nbsp;&nbsp';
+                echo $ae1["map"]["name"];
+                echo '<br>';
+                echo '<img src=' . $ae1["map"]["imageUrl"] . ' width=172.5 height=262.5></img>';
+                echo '<br>';
 
+                echo $ae2["map"]["gameMode"]["name"];
+                echo '&nbsp;&nbsp;&nbsp;&nbsp';
+                echo $ae2["map"]["name"];
+                echo '<br>';
+                echo '<img src=' . $ae2["map"]["imageUrl"] . ' width=172.5 height=262.5></img>';
+
+                echo "</div>";
+            }
+            ?>
+        </div>
     </div>
 </div>

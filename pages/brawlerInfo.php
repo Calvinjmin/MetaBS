@@ -4,7 +4,9 @@
 
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">
-    <?php include("../components/table/brawlerTable.php") ?>
+    <div style="padding-top: 10px;">
+        <?php include("../components/table/brawlerTable.php") ?>
+    </div>
 </body>
 
 </html>

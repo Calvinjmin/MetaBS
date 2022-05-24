@@ -17,6 +17,10 @@
             <a href="/pages/brawlerInfo.php" class="navbar-item">
                 Brawlers
             </a>
+
+            <a href="/pages/forumIndex.php" class="navbar-item">
+                Forum
+            </a>
         </div>
 
         <div class="navbar-end">
