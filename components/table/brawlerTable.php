@@ -15,7 +15,7 @@
 
     foreach ($brawlers as $bra) {
         echo "<tr>";
-
+        echo '<input type=hidden id='.$bra["name"] .' value=' . $bra["id"] . '>';
         // Inserting Image + Brawler Name
         echo '<td> <img src= "' . $bra["imageUrl"] . '" width=30 height=30  style="padding-right: 2px">
             <a onclick="indivBrawler(this)">' . $bra["name"].'</a> </td>';

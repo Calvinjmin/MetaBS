@@ -1,5 +1,5 @@
 <!-- Grabs Active + Upcoming Events -->
-<?php include_once("./api/events.php") ?>
+<?php include_once("./api/eventsAPI.php") ?>
 
 <div class="bodyMap">
     <div class="container content has-text-centered">

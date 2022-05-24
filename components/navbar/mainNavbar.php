@@ -15,15 +15,15 @@
 
         <!-- Links -->
         <div class="navbar-start">
-            <a href="/pages/about.php" class="navbar-item">
+            <a href="/pages/aboutPage.php" class="navbar-item">
                 About
             </a>
 
-            <a href="/pages/brawlerInfo.php" class="navbar-item">
+            <a href="/pages/brawlerInfoPage.php" class="navbar-item">
                 Brawlers
             </a>
 
-            <a href="/pages/forumIndex.php" class="navbar-item">
+            <a href="/pages/forumIndexPage.php" class="navbar-item">
                 Forum
             </a>
         </div>
@@ -32,18 +32,12 @@
         <div class="navbar-end">
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
-                    User
+                    Welcome!
                 </a>
 
                 <div class="navbar-dropdown is-right">
                     <a class="navbar-item">
                         Log In
-                    </a>
-                    <a class="navbar-item">
-                        Sign Up
-                    </a>
-                    <a class="navbar-item">
-                        Logout
                     </a>
                 </div>
             </div>

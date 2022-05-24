@@ -1,5 +1,5 @@
 <html>
-<?php include_once("../api/brawlerData.php") ?>
+<?php include_once("../api/brawlerDataAPI.php") ?>
 <?php include("../components/navbar/mainNavbar.php") ?>
 
 <body>

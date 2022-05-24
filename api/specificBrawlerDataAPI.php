@@ -1,7 +1,9 @@
 <?php
-header('Content-Type: text/html; charset=UTF-8');
-$MAPURL = "https://api.brawlapi.com/v1/maps";
-$ch = curl_init($MAPURL);
+session_start();
+$BRAWLERNAME = $_SESSION["brawlerName"];
+$BRAWLERID = $_SESSION['brawlerID'];
+$BRAWLERURL = 'https://api.brawlapi.com/v1/brawlers/'.$BRAWLERID;
+$ch = curl_init($BRAWLERURL);
 
 $headr = array();
 $headr[] = "Accept: application/json";
@@ -22,6 +24,6 @@ if (isset($data["reason"])) {
 }
 
 // JSON ARRAY
-// Endpoint Description: "https://api.brawlapi.com/v1/maps"
-$mapData = $data["list"];
+// Endpoint Description: https://brawlapi.com/#/endpoints/brawlers/BRAWLERID
+$brawlerData = $data;
 ?>
