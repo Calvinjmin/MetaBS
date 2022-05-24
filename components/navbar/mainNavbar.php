@@ -4,17 +4,17 @@
     <!-- LEON IMAGE BRAND  -->
     <div class="navbar-brand">
         <img src="https://brawlstarsup.com/wp-content/uploads/2018/12/leon.png" width="59.18" height="50">
+
+        <a href="/index.php" class="navbar-item">
+            Meta BS
+        </a>
     </div>
 
     <!-- Navigation Bar  -->
-    <div class="navbar-menu">
+    <div class="navbar-menu is-active">
 
         <!-- Links -->
         <div class="navbar-start">
-            <a href="/index.php" class="navbar-item">
-                Home
-            </a>
-
             <a href="/pages/about.php" class="navbar-item">
                 About
             </a>
