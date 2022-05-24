@@ -1,10 +1,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 <nav class="navbar" role="navigation" aria-label="main navigation">
+
+    <!-- LEON IMAGE BRAND  -->
     <div class="navbar-brand">
         <img src="https://brawlstarsup.com/wp-content/uploads/2018/12/leon.png" width="59.18" height="50">
     </div>
 
+    <!-- Navigation Bar  -->
     <div class="navbar-menu">
+
+        <!-- Links -->
         <div class="navbar-start">
             <a href="/index.php" class="navbar-item">
                 Home
@@ -23,6 +28,7 @@
             </a>
         </div>
 
+        <!-- Dropdown Menu (Users) -->
         <div class="navbar-end">
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">

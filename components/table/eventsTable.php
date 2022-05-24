@@ -1,12 +1,18 @@
+<!-- Grabs Active + Upcoming Events -->
 <?php include_once("./api/events.php") ?>
+
 <div class="bodyMap">
     <div class="container content has-text-centered">
-    <p>
-        <?php
-        echo 'Events on ' . date('l jS \of F Y');
-        echo '<br>';
-        ?>
-    </p>
+
+        <!-- Prints Current Date -->
+        <p>
+            <?php
+            echo 'Events on ' . date('l jS \of F Y');
+            echo '<br>';
+            ?>
+        </p>
+
+        <!-- Column Container (Bulma) -->
         <div class="columns is-centered" style="padding-top: 1%; ">
             <?php
             for ($x = 0; $x < sizeof($activeEvents); $x += 2) {

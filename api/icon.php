@@ -10,6 +10,7 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
+// Executing the CURL Request
 $res = curl_exec($ch);
 $data = json_decode($res, true);
 curl_close($ch);
