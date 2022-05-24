@@ -1,5 +1,6 @@
 <?php
-header('Content-Type: text/html; charset=UTF-8');
+session_start();
+$BRAWLERNAME = $_SESSION["brawlerName"];
 $BRAWLERID = 16000023;
 $BRAWLERURL = 'https://api.brawlapi.com/v1/brawlers/'.$BRAWLERID;
 $ch = curl_init($BRAWLERURL);
@@ -24,5 +25,4 @@ if (isset($data["reason"])) {
 // JSON ARRAY
 // Endpoint Description: https://brawlapi.com/#/endpoints/brawlers/BRAWLERID
 $brawlerData = $data;
-print_r($brawlerData);
 ?>
