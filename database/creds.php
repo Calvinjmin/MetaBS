@@ -9,6 +9,6 @@
         ltrim($db["path"], "/")
     ));
 
-    $stmt = $pdo->query("SELECT * FROM User");
+    $stmt = $pdo->query("SELECT * FROM accounts");
     echo $stmt
 ?>
