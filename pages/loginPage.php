@@ -1,0 +1,43 @@
+<html>
+<?php include("../components/navbar/mainNavbar.php") ?>
+
+<script src="/scripts/loginForm.js"> </script>
+
+<body>
+    <link rel="stylesheet" href="/CSS/body.css" type="text/css">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+
+                    <!-- Login Form -->
+                    <form action="/endpoints/loginPost.php" method="post" class="box">
+                        <div class="field">
+                            <label for="" class="label">Username</label>
+                            <div class="control">
+                                <input type="username" id="username" name="username" placeholder="Username" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="" class="label">Password</label>
+                            <div class="control">
+                                <input type="password" id="password" name="password" placeholder="*******" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <button class="button is-success">
+                                Login
+                            </button>
+                        </div>
+                        <a>Do not have an account? Sign up here</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+
+</html>
