@@ -9,11 +9,11 @@
                 <div class="column is-5-tablet is-4-desktop is-3-widescreen">
 
                     <!-- Login Form -->
-                    <form action="../endpoints/loginPost.php" method="post" class="box">
+                    <form action="../endpoints/signUpPost.php" method="post" class="box">
                         <div class="field">
                             <label for="" class="label">Username</label>
                             <div class="control">
-                                <input type="username" id="username" name="username" placeholder="Username" class="input" required>
+                                <input type="text" id="username" name="username" placeholder="Username" class="input" required>
                             </div>
                         </div>
 
@@ -25,11 +25,17 @@
                         </div>
 
                         <div class="field">
-                            <button class="button is-success">
-                                Login
+                            <label for="" class="label">Email</label>
+                            <div class="control">
+                                <input type="email" id="email" name="email" placeholder="e.g @gmail.com" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <button class="button is-danger">
+                                Sign Up
                             </button>
                         </div>
-                        <a href="/pages/signupPage.php">Do not have an account? Sign up here</a>
                     </form>
 
                 </div>

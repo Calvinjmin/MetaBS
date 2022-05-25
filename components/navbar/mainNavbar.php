@@ -1,4 +1,5 @@
 <?php
+// Begins PHP Session
 session_start();
 ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
@@ -34,22 +35,22 @@ session_start();
         <!-- Dropdown Menu (Users) -->
         <div class="navbar-end">
             <div class="navbar-item has-dropdown is-hoverable">
-                <a href="/pages/loginPage.php" class="navbar-link">
+                <p class="navbar-link">
                     <?php
                     if (!$_SESSION["username"]) {
                         echo 'Welcome!';
                     } else {
-                        echo $_SESSION["username"];
+                        echo '<a href="/pages/userPage.php" class="navbar-item">' . $_SESSION["username"] . '</a>';
                     }
                     ?>
-                </a>
+                </p>
                 <div class="navbar-dropdown">
                     <?php
                     if ($_SESSION["username"]) {
                         echo '<a href="/pages/userPage.php" class="navbar-item">Account</a>';
                         echo '<a href="/endpoints/logout.php" class="navbar-item">Logout</a>';
                     } else {
-                        echo '<a class="navbar-item">Sign Up</a>';
+                        echo '<a href="/pages/loginPage.php" class="navbar-item">Login</a>';
                     }
                     ?>
                 </div>

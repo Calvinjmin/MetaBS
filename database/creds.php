@@ -1,4 +1,3 @@
-<p>
 <?php
 $db = parse_url(getenv("DATABASE_URL"));
 $pdo = new PDO("pgsql:" . sprintf(
@@ -9,10 +8,5 @@ $pdo = new PDO("pgsql:" . sprintf(
     $db["pass"],
     ltrim($db["path"], "/")
 ));
-
-$sql = $pdo->prepare("SELECT * FROM accounts WHERE id=1");
-$sql->execute();
-while ($result = $sql->fetch(PDO::FETCH_ASSOC)) {
-    echo $result['username']."<br/>";
-}
-?></p>
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+?>
