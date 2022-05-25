@@ -1,24 +1,33 @@
 <html>
+<?php include_once("../api/specificBrawlerDataAPI.php") ?>
 <?php include("../components/navbar/mainNavbar.php") ?>
-<?php include("../api/specificBrawlerDataAPI.php") ?>
 
 <body>
-    <div class="container" style="padding-top: 20px;">
+    <link rel="stylesheet" href="/CSS/body.css" type="text/css">
+    <div class="container has-text-centered" style="padding-top: 10px;">
+
+        <!-- Main Body (Tile) -->
         <div class="tile is-ancestor is-vertical">
+
             <div class="tile is-parent">
+
+                <!-- Brawler Name + Image -->
                 <article class="tile is-3 is-child notification is-info">
                     <p class="title"><?php echo $brawlerData["name"] ?></p>
                     <img src=<?php echo $brawlerData["imageUrl"] ?> width="150px" height="150px">
                 </article>
 
+                <!-- Basic Information -->
                 <article class="tile is-child notification">
                     <p class="title">About the Brawler</p>
-                    <p><?php echo $brawlerData["description"]?></p>
-                    <p style="padding-top: 10px;">Rarity: <?php echo $brawlerData["rarity"]["name"]?></p>
-                    <p>Class: <?php echo $brawlerData["class"]["name"]?></p>
+                    <p><?php echo $brawlerData["description"] ?></p>
+                    <p style="padding-top: 10px;">Rarity: <?php echo $brawlerData["rarity"]["name"] ?></p>
+                    <p>Class: <?php echo $brawlerData["class"]["name"] ?></p>
                 </article>
+
             </div>
 
+            <!-- Attack Videos -->
             <div class="tile is-parent">
                 <?php
                 if ($brawlerData["videos"] != null) {
