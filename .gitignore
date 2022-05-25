@@ -1,6 +1,5 @@
 # Credentials
 /api/creds.php
-/database/creds.php
 
 # Composer Depends
 /vendor/
