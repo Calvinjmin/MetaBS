@@ -10,5 +10,5 @@
     ));
 
     $stmt = $pdo->query("SELECT * FROM accounts");
-    echo $stmt
 ?>
+<p><?php $stmt ?></p>

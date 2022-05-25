@@ -1,6 +1,17 @@
 {
+    "name": "calvinjmin/meta-bs",
+    "autoload": {
+        "psr-4": {
+            "Calvinjmin\\MetaBs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Calvin Min",
+            "email": "calvinjmin@gmail.com"
+        }
+    ],
     "require": {
-        "csanquer/pdo-service-provider": "~1.1dev",
         "vlucas/phpdotenv": "^5.4"
     }
 }
