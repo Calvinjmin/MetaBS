@@ -5,14 +5,19 @@ include_once("../database/creds.php");
 $username = $_REQUEST["username"];
 $password = $_REQUEST["password"];
 $email = $_REQUEST["email"];
+$firstName = $_REQUEST["firstName"];
+$lastName = $_REQUEST["lastName"];
 
 try {
     // Insert values in to the Postgresql DB
-    $statement = "INSERT INTO accounts (username, password, email) VALUES ( :username, :password, :email );";
+    $statement = "INSERT INTO accounts (username, password, email, first_name, last_name) 
+                    VALUES ( :username, :password, :email, :firstName , :lastName );";
     $sql = $pdo->prepare($statement);
     $sql->bindParam(':username', $username, PDO::PARAM_STR);
     $sql->bindParam(':password', $password, PDO::PARAM_STR);
     $sql->bindParam(':email', $email, PDO::PARAM_STR);
+    $sql->bindParam(':firstName', $firstName, PDO::PARAM_STR);
+    $sql->bindParam(':lastName', $lastName, PDO::PARAM_STR);
     $sql->execute();
     echo "<script>";
     echo " alert('Signed Up!');      

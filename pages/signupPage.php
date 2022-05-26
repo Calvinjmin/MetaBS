@@ -11,6 +11,20 @@
                     <!-- Login Form -->
                     <form action="../endpoints/signUpPost.php" method="post" class="box">
                         <div class="field">
+                            <label for="" class="label">First Name</label>
+                            <div class="control">
+                                <input type="text" id="first_name" name="first_name" placeholder="John" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="" class="label">Last Name</label>
+                            <div class="control">
+                                <input type="text" id="last_name" name="last_name" placeholder="Doe" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
                             <label for="" class="label">Username</label>
                             <div class="control">
                                 <input type="text" id="username" name="username" placeholder="Username" class="input" required>

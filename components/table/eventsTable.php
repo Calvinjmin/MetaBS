@@ -6,10 +6,12 @@
 
         <!-- Prints Current Date -->
         <p>
-            <?php
-            echo 'Events on ' . date('l jS \of F Y');
-            echo '<br>';
-            ?>
+            <strong>
+                <?php
+                echo 'Events on ' . date('l jS \of F Y');
+                echo '<br>';
+                ?>
+            </strong>
         </p>
 
         <!-- Column Container (Bulma) -->

@@ -1,16 +1,17 @@
 <?php
 // Begins PHP Session
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
 ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 <nav class="navbar" role="navigation" aria-label="main navigation">
 
     <!-- LEON IMAGE BRAND  -->
     <div class="navbar-brand">
-        <img src="https://brawlstarsup.com/wp-content/uploads/2018/12/leon.png" width="59.18" height="50">
-
+        <img src="https://i.ibb.co/dBvVJCg/94ee69c06e464d8897a0e5427a68e716.png" width="59.18" height="50">
         <a href="/index.php" class="navbar-item">
-            Meta BS
+            Home
         </a>
     </div>
 

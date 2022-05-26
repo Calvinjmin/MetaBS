@@ -1,5 +1,4 @@
 <?php
-session_start();
 $BRAWLERNAME = $_SESSION["brawlerName"];
 $BRAWLERID = $_SESSION['brawlerID'];
 $BRAWLERURL = 'https://api.brawlapi.com/v1/brawlers/'.$BRAWLERID;

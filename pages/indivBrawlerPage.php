@@ -1,6 +1,12 @@
 <html>
-<?php include_once("../api/specificBrawlerDataAPI.php") ?>
-<?php include("../components/navbar/mainNavbar.php") ?>
+<?php 
+// Begins PHP Session
+if (!isset($_SESSION)) {
+    session_start();
+}
+include("../api/specificBrawlerDataAPI.php");
+include("../components/navbar/mainNavbar.php");
+?>
 
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">

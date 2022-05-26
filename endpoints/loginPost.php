@@ -42,6 +42,9 @@ function loginUser( $sqlData )
     $_SESSION["username"] = $sqlData["username"];
     $_SESSION["password"] = $sqlData["password"];
     $_SESSION["email"] = $sqlData["email"];
+    $_SESSION["firstName"] = $sqlData["first_name"];
+    $_SESSION["lastName"] = $sqlData["last_name"];
+
     echo "<script>";
     echo " alert('Signed In.');      
             window.location.href='/pages/userPage.php';
