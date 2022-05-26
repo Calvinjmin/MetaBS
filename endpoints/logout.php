@@ -6,6 +6,7 @@ if (!isset($_SESSION)) {
 
 $_SESSION["username"] = "";
 $_SESSION["password"] = "";
+$_SESSION["email"] = "";
 header("Location:../index.php");
 exit;
 ?>

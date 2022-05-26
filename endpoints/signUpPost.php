@@ -14,7 +14,15 @@ try {
     $sql->bindParam(':password', $password, PDO::PARAM_STR);
     $sql->bindParam(':email', $email, PDO::PARAM_STR);
     $sql->execute();
+    echo "<script>";
+    echo " alert('Signed Up!');      
+            window.location.href='/pages/loginPage.php';
+            </script>";
 }
 catch (PDOException $e) {
     $return = "Your fail message: " . $e->getMessage();
+    echo "<script>";
+    echo " alert('Invalid Error');      
+            window.location.href='/pages/signupPage.php';
+            </script>";
 }
