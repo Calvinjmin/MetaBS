@@ -1,5 +1,8 @@
 <html>
-<?php include("../../components/navbar/mainNavbar.php") ?>
+<?php 
+include_once($_SERVER['DOCUMENT_ROOT'] . "/components/navbar/mainNavbar.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/database/forumQuery.php"); 
+?>
 
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">
@@ -10,7 +13,7 @@
         <div class="level-left">
             <div class="level-item">
                 <p class="subtitle is-5">
-                    <strong>0</strong> posts
+                    <strong><?php echo sizeof($forumSelectAllData)?></strong> posts
                 </p>
             </div>
             <div class="level-item">
@@ -25,13 +28,14 @@
                     </p>
                 </div>
             </div>
-            <?php 
-             if ($_SESSION["username"])  {
+            <?php
+            if ($_SESSION["username"]) {
                 echo "<p class=\"level-item\"><a class=\"button is-success\" href=\"./forumNewPostPage.php\">New</a></p>";
-             }
+            }
             ?>
         </div>
     </nav>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/components/tile/forumTile.php") ?>
 </body>
 
 </html>
