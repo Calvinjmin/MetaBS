@@ -1,5 +1,5 @@
 <html>
-<?php include("../components/navbar/mainNavbar.php") ?>
+<?php include("../../components/navbar/mainNavbar.php") ?>
 
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">
@@ -25,7 +25,7 @@
                     </p>
                 </div>
             </div>
-            <p class="level-item"><a class="button is-success">New</a></p>
+            <p class="level-item"><a class="button is-success" href="./forumNewPostPage.php">New</a></p>
         </div>
     </nav>
 </body>

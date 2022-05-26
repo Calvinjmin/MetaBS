@@ -28,7 +28,7 @@ if (!isset($_SESSION)) {
                 Brawlers
             </a>
 
-            <a href="/pages/forumIndexPage.php" class="navbar-item">
+            <a href="/pages/forum/forumLandingPage.php" class="navbar-item">
                 Forum
             </a>
         </div>
@@ -41,17 +41,17 @@ if (!isset($_SESSION)) {
                     if (!$_SESSION["username"]) {
                         echo 'Welcome!';
                     } else {
-                        echo '<a href="/pages/userPage.php" class="navbar-item">' . $_SESSION["username"] . '</a>';
+                        echo '<a href="/pages/user/userPage.php" class="navbar-item">' . $_SESSION["username"] . '</a>';
                     }
                     ?>
                 </p>
                 <div class="navbar-dropdown">
                     <?php
                     if ($_SESSION["username"]) {
-                        echo '<a href="/pages/userPage.php" class="navbar-item">Account</a>';
+                        echo '<a href="/pages/user/userPage.php" class="navbar-item">Account</a>';
                         echo '<a href="/endpoints/logout.php" class="navbar-item">Logout</a>';
                     } else {
-                        echo '<a href="/pages/loginPage.php" class="navbar-item">Login</a>';
+                        echo '<a href="/pages/user/loginPage.php" class="navbar-item">Login</a>';
                     }
                     ?>
                 </div>

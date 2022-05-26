@@ -16,14 +16,14 @@ try {
         } else {            // REDIRECT HERE BACK TO LOGIN, Invalid Password
             echo "<script>";
             echo " alert('Invalid Credentials. Try Again!');      
-                    window.location.href='/pages/loginPage.php';
+                    window.location.href='/pages/user/loginPage.php';
                     </script>";
 
         }
     } else {        // REDIRECT HERE BACK TO LOGIN, Invalid Username
         echo "<script>";
         echo " alert('Invalid Credentials. Try Again!.');      
-                window.location.href='/pages/loginPage.php';
+                window.location.href='/pages/user/loginPage.php';
                 </script>";
     }
 } catch (PDOException $e) {
@@ -47,7 +47,7 @@ function loginUser( $sqlData )
 
     echo "<script>";
     echo " alert('Signed In.');      
-            window.location.href='/pages/userPage.php';
+            window.location.href='/pages/user/userPage.php';
             </script>";
     exit;
 }

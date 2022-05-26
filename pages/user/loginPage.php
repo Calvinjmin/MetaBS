@@ -1,5 +1,5 @@
 <html>
-<?php include("../components/navbar/mainNavbar.php") ?>
+<?php include("../../components/navbar/mainNavbar.php") ?>
 
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">
@@ -9,7 +9,7 @@
                 <div class="column is-5-tablet is-4-desktop is-3-widescreen">
 
                     <!-- Login Form -->
-                    <form action="../endpoints/loginPost.php" method="post" class="box">
+                    <form action="../../endpoints/loginPost.php" method="post" class="box">
                         <div class="field">
                             <label for="" class="label">Username</label>
                             <div class="control">
@@ -29,7 +29,7 @@
                                 Login
                             </button>
                         </div>
-                        <a href="/pages/signupPage.php">Do not have an account? Sign up here</a>
+                        <a href="/pages/user/signupPage.php">Do not have an account? Sign up here</a>
                     </form>
 
                 </div>

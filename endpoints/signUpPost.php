@@ -21,13 +21,13 @@ try {
     $sql->execute();
     echo "<script>";
     echo " alert('Signed Up!');      
-            window.location.href='/pages/loginPage.php';
+            window.location.href='/pages/user/loginPage.php';
             </script>";
 }
 catch (PDOException $e) {
     $return = "Your fail message: " . $e->getMessage();
     echo "<script>";
     echo " alert('Invalid Error');      
-            window.location.href='/pages/signupPage.php';
+            window.location.href='/pages/user/signupPage.php';
             </script>";
 }
