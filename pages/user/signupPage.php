@@ -9,7 +9,7 @@
                 <div class="column is-5-tablet is-4-desktop is-3-widescreen">
 
                     <!-- Login Form -->
-                    <form action="../endpoints/signUpPost.php" method="post" class="box">
+                    <form action="../../endpoints/signUpPost.php" method="post" class="box">
                         <div class="field">
                             <label for="" class="label">First Name</label>
                             <div class="control">

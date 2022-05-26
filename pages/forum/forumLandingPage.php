@@ -25,7 +25,11 @@
                     </p>
                 </div>
             </div>
-            <p class="level-item"><a class="button is-success" href="./forumNewPostPage.php">New</a></p>
+            <?php 
+             if ($_SESSION["username"])  {
+                echo "<p class=\"level-item\"><a class=\"button is-success\" href=\"./forumNewPostPage.php\">New</a></p>";
+             }
+            ?>
         </div>
     </nav>
 </body>
