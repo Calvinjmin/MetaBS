@@ -23,6 +23,7 @@ if (isset($data["reason"])) {
 
 // JSON ARRAY
 // Endpoint Description: "https://api.brawlapi.com/v1/events"
+$allMaps = $data;
 $activeEvents = $data["active"];
 $upcomingEvents = $data["upcoming"];
 ?>

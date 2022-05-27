@@ -24,4 +24,9 @@ if (isset($data["reason"])) {
 // JSON ARRAY
 // Endpoint Description: https://brawlapi.com/#/endpoints/brawlers
 $brawlers = $data["list"];
+
+// Sort Brawlers in Ascending Order
+usort($brawlers , function( $a , $b ) {
+    return $a["id"] < $b["id"] ? -1 : 1;
+})
 ?>

@@ -28,9 +28,14 @@ if (!isset($_SESSION)) {
                 Brawlers
             </a>
 
+            <a href="/pages/mapInfoPage.php" class="navbar-item"> 
+                Maps
+            </a>
+
             <a href="/pages/forum/forumLandingPage.php" class="navbar-item">
                 Forum
             </a>
+
         </div>
 
         <!-- Dropdown Menu (Users) -->
@@ -41,7 +46,7 @@ if (!isset($_SESSION)) {
                     if (!$_SESSION["username"]) {
                         echo 'Welcome!';
                     } else {
-                        echo '<a href="/pages/user/userPage.php" class="navbar-item">' . $_SESSION["username"] . '</a>';
+                        echo $_SESSION["username"];
                     }
                     ?>
                 </p>
