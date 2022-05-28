@@ -9,8 +9,8 @@ include($_SERVER['DOCUMENT_ROOT'] . "/api/mapAPI.php");
 
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">
-    <div class="container content has-text-centered" style="height: 95%;">
-        <div class="tabs is-centered is-toggle is-fullwidth">
+    <div class="container has-text-centered" style="height: 95%;">
+        <div class="tabs is-centered">
             <ul>
                 <li id="gemGrabTab" class="is-active">
                     <a onclick="switchToGemGrab()">
