@@ -26,13 +26,23 @@ if (isset($data["reason"])) {
 $activeEvents = $data["active"];
 $upcomingEvents = $data["upcoming"];
 
-$gemGrabMaps = array();
-$knockoutMaps = array();
-$bountyMaps = array();
-$brawlBallMaps = array();
-$heistMaps = array();
-$soloShowndownMaps = array();
-$duoShowdownMaps = array();
+// Active Maps
+$activeGemGrabMaps = array();
+$activeKnockoutMaps = array();
+$activeBountyMaps = array();
+$activeBrawlBallMaps = array();
+$activeHeistMaps = array();
+$activeSoloShowndownMaps = array();
+$activeDuoShowdownMaps = array();
+
+// Upcoming Map
+$upcomingGemGrabMaps = array();
+$upcomingKnockoutMaps = array();
+$upcomingBountyMaps = array();
+$upcomingBrawlBallMaps = array();
+$upcomingHeistMaps = array();
+$upcomingSoloShowndownMaps = array();
+$upcomingDuoShowdownMaps = array();
 
 // Sort the Arrays into their Game Modes
 foreach ($activeEvents as $map) {
@@ -40,25 +50,25 @@ foreach ($activeEvents as $map) {
 
     switch ($mapType) {
         case "Gem Grab":
-            $gemGrabMaps[] = $map;
+            $activeGemGrabMaps[] = $map;
             break;
         case "Bounty":
-            $bountyMaps[] = $map;
+            $activeBountyMaps[] = $map;
             break;
         case "Brawl Ball":
-            $brawlBallMaps[] = $map;
+            $activeBrawlBallMaps[] = $map;
             break;
         case "Heist":
-            $heistMaps[] = $map;
+            $activeHeistMaps[] = $map;
             break;
         case "Solo Showdown":
-            $soloShowndownMaps[] = $map;
+            $activeSoloShowndownMaps[] = $map;
             break;
         case "Duo Showdown":
-            $duoShowdownMaps[] = $map;
+            $activeDuoShowdownMaps[] = $map;
             break;
         case "Knockout":
-            $knockoutMaps[] = $map;
+            $activeKnockoutMaps[] = $map;
             break;
     }
 }
@@ -68,25 +78,26 @@ foreach ($upcomingEvents as $map) {
 
     switch ($mapType) {
         case "Gem Grab":
-            $gemGrabMaps[] = $map;
+            $upcomingGemGrabMaps[] = $map;
             break;
         case "Bounty":
-            $bountyMaps[] = $map;
+            $upcomingBountyMaps[] = $map;
             break;
         case "Brawl Ball":
-            $brawlBallMaps[] = $map;
+            $upcomingBrawlBallMaps[] = $map;
             break;
         case "Heist":
-            $heistMaps[] = $map;
+            $upcomingHeistMaps[] = $map;
             break;
         case "Solo Showdown":
-            $soloShowndownMaps[] = $map;
+            $upcomingSoloShowndownMaps[] = $map;
             break;
         case "Duo Showdown":
-            $duoShowdownMaps[] = $map;
+            $upcomingDuoShowdownMaps[] = $map;
             break;
         case "Knockout":
-            $knockoutMaps[] = $map;
+            $upcomingKnockoutMaps[] = $map;
             break;
     }
+
 }
