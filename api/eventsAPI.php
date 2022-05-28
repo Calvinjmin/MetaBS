@@ -23,7 +23,70 @@ if (isset($data["reason"])) {
 
 // JSON ARRAY
 // Endpoint Description: "https://api.brawlapi.com/v1/events"
-$allMaps = $data;
 $activeEvents = $data["active"];
 $upcomingEvents = $data["upcoming"];
-?>
+
+$gemGrabMaps = array();
+$knockoutMaps = array();
+$bountyMaps = array();
+$brawlBallMaps = array();
+$heistMaps = array();
+$soloShowndownMaps = array();
+$duoShowdownMaps = array();
+
+// Sort the Arrays into their Game Modes
+foreach ($activeEvents as $map) {
+    $mapType = $map["map"]["gameMode"]["name"];
+
+    switch ($mapType) {
+        case "Gem Grab":
+            $gemGrabMaps[] = $map;
+            break;
+        case "Bounty":
+            $bountyMaps[] = $map;
+            break;
+        case "Brawl Ball":
+            $brawlBallMaps[] = $map;
+            break;
+        case "Heist":
+            $heistMaps[] = $map;
+            break;
+        case "Solo Showdown":
+            $soloShowndownMaps[] = $map;
+            break;
+        case "Duo Showdown":
+            $duoShowdownMaps[] = $map;
+            break;
+        case "Knockout":
+            $knockoutMaps[] = $map;
+            break;
+    }
+}
+
+foreach ($upcomingEvents as $map) {
+    $mapType = $map["map"]["gameMode"]["name"];
+
+    switch ($mapType) {
+        case "Gem Grab":
+            $gemGrabMaps[] = $map;
+            break;
+        case "Bounty":
+            $bountyMaps[] = $map;
+            break;
+        case "Brawl Ball":
+            $brawlBallMaps[] = $map;
+            break;
+        case "Heist":
+            $heistMaps[] = $map;
+            break;
+        case "Solo Showdown":
+            $soloShowndownMaps[] = $map;
+            break;
+        case "Duo Showdown":
+            $duoShowdownMaps[] = $map;
+            break;
+        case "Knockout":
+            $knockoutMaps[] = $map;
+            break;
+    }
+}
