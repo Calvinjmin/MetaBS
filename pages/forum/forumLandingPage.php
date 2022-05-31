@@ -19,7 +19,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/database/forumQuery.php");
             <div class="level-item">
                 <div class="field has-addons">
                     <p class="control">
-                        <input class="input" type="text" placeholder="Find a post">
+                        <input class="input" type="text" placeholder="DOES NOT WORK YET!">
                     </p>
                     <p class="control">
                         <button class="button">

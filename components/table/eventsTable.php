@@ -5,7 +5,7 @@
     <div class="container content has-text-centered">
 
         <!-- Prints Current Date -->
-        <p>
+        <p class="subtitle">
             <strong>
                 <?php
                 echo 'Events on ' . date('l jS \of F Y');
@@ -23,18 +23,20 @@
 
                 echo '<div class =column>';
 
-                echo $ae1["map"]["gameMode"]["name"];
-                echo '&nbsp;&nbsp;&nbsp;&nbsp';
-                echo $ae1["map"]["name"];
-                echo '<br>';
-                echo '<img src=' . $ae1["map"]["imageUrl"] . ' width=172.5 height=262.5></img>';
-                echo '<br>';
+                echo '<div class=card>';
+                echo '<div class="card-header">' . $ae1["map"]["gameMode"]["name"]. ' | '. $ae1["map"]["name"] . '</div>';
+                echo '<div class="card-image"> 
+                            <img src=' . $ae1["map"]["imageUrl"] . ' width=172.5 height=262.5> 
+                      </div>';
+                echo '</div>';
 
-                echo $ae2["map"]["gameMode"]["name"];
-                echo '&nbsp;&nbsp;&nbsp;&nbsp';
-                echo $ae2["map"]["name"];
-                echo '<br>';
-                echo '<img src=' . $ae2["map"]["imageUrl"] . ' width=172.5 height=262.5></img>';
+
+                echo '<div class=card style="margin-top: 5%">';
+                echo '<div class="card-header">' . $ae1["map"]["gameMode"]["name"]. ' | '. $ae1["map"]["name"] . '</div>';
+                echo '<div class="card-image"> 
+                            <img src=' . $ae1["map"]["imageUrl"] . ' width=172.5 height=262.5> 
+                      </div>';
+                echo '</div>';
 
                 echo "</div>";
             }
