@@ -24,7 +24,7 @@ include("../components/navbar/mainNavbar.php");
                 </article>
 
                 <!-- Basic Information -->
-                <article class="tile is-child notification">
+                <article class="tile is-child notification is-light">
                     <p class="title">About the Brawler</p>
                     <p><?php echo $brawlerData["description"] ?></p>
                     <p style="padding-top: 10px;">Rarity: <?php echo $brawlerData["rarity"]["name"] ?></p>

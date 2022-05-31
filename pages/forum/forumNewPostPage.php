@@ -4,8 +4,12 @@
 <body>
     <link rel="stylesheet" href="/CSS/body.css" type="text/css">
     <div class="container content has-text-centered" style="height: 95%; padding-top:2.5%;">
+        <button class="button is-small is-rounded is-danger">
+            <a href="/pages/forum/forumLandingPage.php" style="color: inherit">Back to Forum</a>
+        </button>
+
         <!-- New Post Card -->
-        <form action="../../database/forumPost.php" method="post">
+        <form action="../../database/forumPost.php" method="post" style="padding-top: 2.5%;">
             <div class="card">
                 <header class="card-header is-mobile">
                     <p class="card-header-title">
@@ -25,7 +29,7 @@
                         <textarea class="textarea" id="postText" name="postText" placeholder="e.g. Hello world"></textarea>
                     </div>
 
-                    <button class="button is-small is-rounded is-success" style="padding-left: 10px;">
+                    <button class="button is-small is-rounded is-success">
                         Post
                     </button>
                 </div>

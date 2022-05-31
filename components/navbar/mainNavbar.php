@@ -2,6 +2,10 @@
 // Begins PHP Session
 if (!isset($_SESSION)) {
     session_start();
+
+    if (!isset($_SESSION["username"])) {
+        $_SESSION["username"] = "";
+    }
 }
 ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
@@ -28,7 +32,7 @@ if (!isset($_SESSION)) {
                 Brawlers
             </a>
 
-            <a href="/pages/mapInfoPage.php" class="navbar-item"> 
+            <a href="/pages/mapInfoPage.php" class="navbar-item">
                 Maps
             </a>
 
